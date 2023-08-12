@@ -17,8 +17,34 @@
         console.log(elements.z);
         console.log(elements.mass);
 
-        elements.bond = 'co2'
+        elements.bond = 'co2';
         console.log(elements);
+
+        delete elements.bond;
+        console.log(elements);
+
+        const product = 
+        {
+          name: 'shirt',
+          size: 'medium',
+          'customize-style': 'short sleeves',
+          rating: 
+          {
+            stars: 4.0,
+            count: 23
+          },
+          nest: function nest()
+          {
+            console.log('thsi is nest');
+          }
+        };
+        console.log(product);
+        console.log(product['customize-style']);
+        product.nest();
+        console.log(typeof product.nest);
+        console.log(typeof console);
+        console.log(typeof console.log);
+
       </script>
     </body>
   </head>
