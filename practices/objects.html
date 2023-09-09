@@ -53,7 +53,7 @@
         {
           product_name : 'shirt',
           size : 'large'
-        }
+        };
         const object2 = object1;
         console.log(object1);
         object1.product_name = 'tshirt';
@@ -62,9 +62,40 @@
         const object3 =        {
           product_name : 'tshirt',
           size : 'large'
-        }
+        };
         console.log(object3 === object1);
         console.log(object2 === object1);
+
+        //destructing
+
+        const object4 =
+        {
+          product_name : 'jeans',
+          size : 34
+        };
+        const {product_name, size} = object4;
+        console.log(product_name);
+        console.log(size);
+
+        //shorthand property
+
+        const object5 =
+        {
+          size,
+        };
+        console.log(object5);
+
+        // shorthand method
+
+        const object6 =
+        {
+          method()
+          {
+            console.log('This is shorthand method');
+          }
+        };
+        object6.method();
+
       </script>
     </body>
   </head>
